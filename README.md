@@ -217,25 +217,6 @@ Assignment/
 
 ---
 
-## 💡 Ideas for Improvement
-
-### Short-term
-1. **OCR integration** — Use Tesseract or EasyOCR to extract specs from diagrams and tables embedded as images in the PDF
-2. **Confidence scoring** — Add a confidence score to each extracted spec based on retrieval similarity + LLM certainty
-3. **Cross-reference validation** — Cross-check extracted values across multiple sections where the same spec appears
-
-### Medium-term
-4. **Fine-tuned embeddings** — Train a domain-specific embedding model on automotive service manuals for better retrieval
-5. **Table extraction** — Use specialized table parsers (Camelot, Tabula) for structured spec tables
-6. **Multi-modal extraction** — Use vision LLMs (GPT-4V, Llama 3.2 Vision) to extract specs from images
-
-### Long-term
-7. **Spec database** — Build a structured database of all specs in the manual, queryable by component/system
-8. **Multi-manual support** — Extend to support multiple vehicle models and years
-9. **Comparison engine** — Compare specs across different model years to identify changes
-
----
-
 ## 🛠️ Tools Used
 
 | Component | Tool | Purpose |
