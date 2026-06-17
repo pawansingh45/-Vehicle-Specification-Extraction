@@ -217,6 +217,28 @@ Assignment/
 
 ---
 
+## 💡 Ideas for Improvement
+
+### Short-term
+- **Table-aware parsing** — Use Camelot or Tabula to extract structured spec tables directly instead of relying on raw text extraction, which can jumble table rows and columns
+- **Confidence scoring** — Attach a confidence score to each extracted spec by combining the retrieval similarity score with LLM output certainty, helping users prioritize trustworthy results
+- **Cross-reference validation** — When the same spec appears on multiple pages (e.g., torque for a bolt mentioned in both the procedure and the spec table), cross-check values to catch extraction errors
+- **Query expansion** — Automatically expand user queries with synonyms (e.g., "torque" → "tighten to", "Nm", "lb-ft") to improve recall on ambiguous queries
+
+### Medium-term
+- **OCR integration** — Use Tesseract or EasyOCR to handle specs embedded in scanned diagrams or images that PyMuPDF's text extraction misses
+- **Fine-tuned embeddings** — Train a domain-specific embedding model on automotive service manuals to improve retrieval accuracy over the general-purpose MiniLM model
+- **Hybrid retrieval** — Combine vector similarity search with BM25 keyword matching for better recall, especially for exact part numbers or spec values that embeddings don't capture well
+- **Caching layer** — Cache LLM responses for repeated or similar queries to reduce API latency and cost
+
+### Long-term
+- **Multi-manual support** — Extend the pipeline to index and query across multiple vehicle models and years simultaneously
+- **Spec database** — Build a normalized relational database of all extracted specs, queryable by component, system, or specification type without needing the LLM
+- **Comparison engine** — Compare specs across different model years or trim levels to identify changes and updates
+- **Vision LLM integration** — Use multimodal models (GPT-4V, Llama 3.2 Vision) to extract specs from wiring diagrams, exploded views, and annotated images
+
+---
+
 ## 🛠️ Tools Used
 
 | Component | Tool | Purpose |
