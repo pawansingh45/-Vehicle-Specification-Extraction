@@ -1,4 +1,4 @@
-# 🔧 Vehicle Specification Extraction — RAG Pipeline
+[# 🔧 Vehicle Specification Extraction — RAG Pipeline
 
 A **Retrieval-Augmented Generation (RAG)** system that extracts vehicle specifications (torque values, fluid capacities, part numbers) from automotive service manual PDFs using LLMs and semantic retrieval.
 
@@ -233,3 +233,4 @@ Assignment/
 ## 📝 License
 
 This project was built as an assignment submission.
+](https://github.com/pawansingh45/-Vehicle-Specification-Extraction)
