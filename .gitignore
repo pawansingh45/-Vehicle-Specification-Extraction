@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+chroma_db/
+output/
+*.egg-info/
+dist/
+build/
+.ipynb_checkpoints/
+extract_pdf.py
+extract_manual.py
+check_deps.py
+*.pdf
